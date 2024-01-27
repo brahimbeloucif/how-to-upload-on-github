@@ -1,0 +1,26 @@
+git init
+git add ./
+git add -f .gitignore
+git commit -m "Add .gitignore file"
+git commit -m "Initial commit"
+git remote add origin # here link repo exemple : https://github.com/brahimbeloucif/how-to-upload-on-github.git
+git branch -M main  # or git branch -M master if you are using the master branch
+git push -u origin main
+
+#Structure of gitignore file 
+#is create on main folder 
+# add this to first line to skip files or folders not in next lines /*
+# to upload just folder in next lines use this !/name of folder/
+#to just files in next lines use this !name_of_file
+#=================this exemple===============#
+#/*
+#!/lib/
+#!/android/
+#!pubspec.yaml
+
+
+
+
+
+#problem directory 
+git config --global --add safe.directory /PATH/ #exemple /D:/FlutterApps/Xo/
